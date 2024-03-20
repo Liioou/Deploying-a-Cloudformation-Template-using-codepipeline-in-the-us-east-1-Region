@@ -16,6 +16,8 @@ We will be writing a buildspec.yaml file based on our use case and that will be 
 
 The build stage will consist on testing the cfn template and creating an artifact that will be used on the deploy phase to help us deploy our template
 
+On s3 we will create a bucket to use to package the artifact created at the build stage
+
 The cfn templte will be then deployed to Cloudformation
 
 The deploy stage will be set up as is:
