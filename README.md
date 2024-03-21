@@ -25,6 +25,8 @@ In this project we will have 3 stages
 
 - <b>AWS Codecommit</b>
 
+- <b>AWS Codebuilt</b>
+
 - <b>Aws Cloudformation</b>
 
 - <b>AWS S3</b>
@@ -46,6 +48,11 @@ In this project we will have 3 stages
 
 - <b> First, go on Aws Cloudformation we test our template by deploying it to make sure it works
 <br />
+
+
+<img src="https://i.imgur.com/P0rc8GA.png" height="80%" width="80%" alt="Testing our CFN Template"/>
+
+<img src="https://i.imgur.com/EPUWkfi.png" height="80%" width="80%" alt="Testing our CFN Template"/>
 
 
 
