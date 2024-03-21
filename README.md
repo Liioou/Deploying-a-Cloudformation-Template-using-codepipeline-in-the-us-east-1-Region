@@ -1,4 +1,4 @@
-# Deploy a static Website with S3
+# Deploying a Cloudformation Template with AWS codepipeline in the us-east-1 Region
 
 
 
@@ -14,7 +14,13 @@ This project consist in deploying a static website with the target being a S3 bu
 
 <h2>Services Used </h2>
 
-- <b>AWS Route 53</b>
+- <b>VsCode</b>
+
+- <b>AWS Cloud9</b>
+
+- <b>AWS Codecommit</b>
+
+- <b>Aws Cloudformation</b>
 
 - <b>AWS S3</b> 
 <br />
