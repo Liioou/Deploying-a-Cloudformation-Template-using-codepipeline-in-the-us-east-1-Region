@@ -27,7 +27,9 @@ In this project we will have 3 stages
 
 - <b>Aws Cloudformation</b>
 
-- <b>AWS S3</b> 
+- <b>AWS S3</b>
+
+- <b>AWS IAM </b> 
 <br />
 
 
@@ -38,12 +40,15 @@ In this project we will have 3 stages
 
  <br />
 
-- <b> On S3 create the bucket (Name must match the domaine name that will be used for this project) <br/>
+- <b> We have a Cloudformation template to deploy an Ec2 instance in us-east 1 <br/>
 <br />
 <br />
 
-- <b> Uncheck "block public access" to make bucket public so that users can have access to the contain of the bucket
+- <b> First, go on Aws Cloudformation we test our template by deploying it to make sure it works
 <br />
+
+
+
 <br />
 
 
