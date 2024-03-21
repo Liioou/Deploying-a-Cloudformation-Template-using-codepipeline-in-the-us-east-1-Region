@@ -5,7 +5,12 @@
 
 
 <h2>Description</h2>
-This project consist in deploying a static website with the target being a S3 bucket. User will be able to access it using the Dns name associated with our website. Making it simple for them to connect to it.
+This project consist in deploying a Cloudformation template using Aws service Codepipeline. For this project we have a Cloudformation template ready to deploy
+
+In this project we will have 3 stages
+- The source phase
+- The build phase
+- The deploy phase
 <br />
 <br />
 <br />
