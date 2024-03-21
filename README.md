@@ -19,7 +19,6 @@ In this project we will have 3 stages
 
 <h2>Services Used </h2>
 
-- <b>VsCode</b>
 
 - <b>AWS Cloud9</b>
 
@@ -59,10 +58,34 @@ In this project we will have 3 stages
 <br />
 
 
-- <b> Once bucket is created, upload "index.html" file
+- <b> First test the cfn template.
+- Using Aws Cloud9, create a testing environment by deploying an ec2 instance and connect to it
+- Define your requirement such as instance type, Network setting
+
+  <img src="https://i.imgur.com/ZKkjw9D.png" height="80%" width="80%" alt="Create static website steps"/>
 
 
-<img src="https://i.imgur.com/8sYqRJh.png" height="80%" width="80%" alt="Create static website steps"/>
+
+
+<br />
+<br />
+
+Once created, connect to the instance 
+
+check for CLI access using command cli --version
+
+Create a folder that will contain your code/cfn template
+
+in the new folder upload the template
+
+Create a file and upload your template
+
+Add your file to the instance
+
+
+
+
+
 </p>
 <br />
 <br />
