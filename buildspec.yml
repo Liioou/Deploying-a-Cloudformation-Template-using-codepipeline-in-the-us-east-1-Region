@@ -1,0 +1,43 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions: #this allow us to install runtimes Python
+      python: 3.12 # install python 3.8
+
+  pre_build:
+    commands: # CLI commands to run (we need to provide the instructions)
+      - echo WE ARE IN THE PREBUILT PHASE =====
+      - echo CHECKING WETHER PYTHON3 HAS BEEN INSTALLED
+      - python3 --version # return the version of python installed
+      - echo CHECK PIP3 IS INSTALLED
+      - pip3 --version
+      - echo INSTALL CFN-LINT 
+      - pip3 install cfn-lint
+      - echo CHECK WETHER CFN-LINT IS INSTALLED
+      - cfn-lint --version
+
+  build:
+    commands:
+      - echo ==== TESTING OUR CLOUDFORMATION TEMPLATE ===
+      - echo WE ARE IN THIS FOLDER =====
+      - pwd
+      - echo LIST WHAT IS IN OUR REPOSITORY
+      - ls -l
+      - echo TESTING THE CFN
+      - cfn-lint deploy-ec2-cfn.yaml
+      - echo ==== THE CLOUDFORMATION TEMPLATE IS VALID  ====
+      - echo RUN CFN TEMPLATE PACKAGE
+      - aws cloudformation package --template-file deploy-ec2-cfn.yaml --s3-bucket mydeploybuckpipeline --output-template-file outputtemp.yml
+
+
+  post_build:
+    commands:
+      - echo BUILD WAS COMPLETED AT `date` ======
+      - echo LIST THE CONTAIN OF DIRECTORY
+      - ls -l
+
+artifacts:
+  files:
+    - deploy-ec2-cfn.yaml
+    - outputtemp.yml
