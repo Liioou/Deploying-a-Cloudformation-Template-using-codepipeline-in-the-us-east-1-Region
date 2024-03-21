@@ -209,7 +209,7 @@ If there's no return, it means your template do not contain any error and your a
 
 setup the deploy stage by choosing the deploy provider. in this case Cloudformation
 
-our test deploy stage Region is eu-west-3 9Paris)
+our test deploy stage Region is eu-west-3 (Paris)
 
 Under Template
 select Artifact name and define the name as the file artifact template created (that will be created on s3) 
@@ -229,6 +229,8 @@ At this point the pipeline must have failed because of missing elements
 
 
 - <b> Creating the buildspec file
+
+On S3 create a bucket to host the cloudformation package artificat needed to advance on the build stage
   Based on requierements, create buildspec as a yaml file
   on Aws cloud9 create buildspec.yaml file and push to Aws codecommit
 
