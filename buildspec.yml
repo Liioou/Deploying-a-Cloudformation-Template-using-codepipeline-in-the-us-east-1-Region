@@ -25,10 +25,10 @@ phases:
       - echo LIST WHAT IS IN OUR REPOSITORY
       - ls -l
       - echo TESTING THE CFN
-      - cfn-lint deploy-ec2-cfn.yaml
+      - cfn-lint template.yaml
       - echo ==== THE CLOUDFORMATION TEMPLATE IS VALID  ====
       - echo RUN CFN TEMPLATE PACKAGE
-      - aws cloudformation package --template-file deploy-ec2-cfn.yaml --s3-bucket mydeploybuckpipeline --output-template-file outputtemp.yml
+      - aws cloudformation package --template-file template.yaml --s3-bucket pipelineonawscodepipeline --output-template-file outputtemplate.yaml
 
 
   post_build:
@@ -39,5 +39,6 @@ phases:
 
 artifacts:
   files:
-    - deploy-ec2-cfn.yaml
-    - outputtemp.yml
+    - template.yaml
+    - outputtemplate.yaml
+
