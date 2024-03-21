@@ -24,7 +24,7 @@ In this project we will have 3 stages
 
 - <b>AWS Codecommit</b>
 
-- <b>AWS Codebuilt</b>
+- <b>AWS Codebuild</b>
 
 - <b>Aws Cloudformation</b>
 
@@ -205,14 +205,32 @@ If there's no return, it means your template do not contain any error and your a
 
 
 
-- <b> Next create a record and select Alias. choose "Alias to S3 website endpoint" and select the region associated to the bucket:
+- <b> Add a deploy stage
+
+setup the deploy stage by choosing the deploy provider. in this case Cloudformation
+
+our test deploy stage Region is eu-west-3 9Paris)
+
+Under Template
+select Artifact name and define the name as the file artifact template created (that will be created on s3) 
 
 <img src="https://i.imgur.com/PHVWWr6.png" height="80%" width="80%" alt="Create static website steps"/>
 <br />
 <br />
 
+Define IAM role
 
-- <b> Test it:
+Define output file name
+
+Review and Create Pipeline
+
+
+At this point the pipeline must have failed because of missing elements
+
+
+- <b> Creating the buildspec file
+  Based on requierements, create buildspec as a yaml file
+  on Aws cloud9 create buildspec.yaml file and push to Aws codecommit
 
 
 
