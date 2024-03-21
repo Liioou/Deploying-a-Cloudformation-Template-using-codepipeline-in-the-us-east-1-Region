@@ -240,8 +240,17 @@ On S3 create a bucket to host the cloudformation package artificat needed to adv
 <br />
 <br />
 
+- <b> Deploy stage
+
+- First deployment to Paris region
+
+  make sure to fix all overwrite settings
+
+  release changes
 
 
+
+  Approve the 
 - <b> Create image of the instance and test it
 
 
