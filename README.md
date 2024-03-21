@@ -45,7 +45,7 @@ In this project we will have 3 stages
 <br />
 <br />
 
-- <b> First, go on Aws Cloudformation we test our template by deploying it to make sure it works
+- <b> First, go on Aws Cloudformation test the template by deploying it to make sure it works
 <br />
 
 
@@ -58,7 +58,7 @@ In this project we will have 3 stages
 <br />
 
 
-- <b> First test the cfn template.
+ <b> Setup the test environment
 - Using Aws Cloud9, create a testing environment by deploying an ec2 instance and connect to it
 - Define your requirement such as instance type, Network setting
 
@@ -72,15 +72,25 @@ In this project we will have 3 stages
 
 Once created, connect to the instance 
 
-check for CLI access using command cli --version
+Using the terminal, check for CLI access using command aws --version
 
-Create a folder that will contain your code/cfn template
+Create a folder that will contain your code/cfn template and cd into it
+
+ <img src="https://i.imgur.com/bljygUM.png" height="80%" width="80%" alt="Create static website steps"/>
+
 
 in the new folder upload the template
 
 Create a file and upload your template
 
-Add your file to the instance
+The new file created, test the file with a cfn-lint
+
+first verify the version of python using command python3 --version
+
+install cfn-lint using command "pip install cfn-lint"
+
+ <img src="https://i.imgur.com/Wfn3XAj.png" height="80%" width="80%" alt="Create static website steps"/>
+
 
 
 
