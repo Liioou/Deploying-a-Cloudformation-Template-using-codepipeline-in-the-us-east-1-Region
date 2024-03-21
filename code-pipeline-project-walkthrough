@@ -23,4 +23,4 @@ The cfn templte will be then deployed to Cloudformation
 The deploy stage will be set up as is:
 - A stage deploy in the us-west-3 (paris) region
 - An approval stage
-- A deploy to us-east-1 (n.virginia) region
+- A prod deploy to us-east-1 (n.virginia) region
