@@ -148,30 +148,59 @@ If there's no return, it means your template do not contain any error and your a
   
 
 
-
-- <b> Under "Permission", edit the s3 policy bucket to give permission/access to bucket
-<br />
 <br />
 
-
-- <b> Bucket should now be public:
-
-
-
-<img src="https://i.imgur.com/yZTe3Oi.png" height="80%" width="80%" alt="Create static website steps"/>
-<br />
 <br />
 
 
 
-- <b> On route 53 purchase the domain name of the website you are trying to create 
+- <b> On Codepipeline create a pipeline
 <br />
 <br />
 
 
-- <b> < Or if already have a registered domaine make sure subdomain match the bucket name you are using to create the static website >
+- <b> Choose the source stage
+  in this case Codecommit is the source
+
+
+
+<img src="https://i.imgur.com/8KNEYPz.png" height="80%" width="80%" alt="Create static website steps"/>
 <br />
 <br />
+
+<img src="https://i.imgur.com/GF18jlK.png" height="80%" width="80%" alt="Create static website steps"/>
+
+<br />
+
+<br />
+
+
+- <b> Add a build stage
+<br />
+
+<img src="https://i.imgur.com/a4Ug7NM.png" height="80%" width="80%" alt="Create static website steps"/>
+<br />
+
+
+- <b> < For Project name select create project
+
+  Select the environment to work with
+
+  Under buildspec setting select: Use a buildspec file
+<br />
+<br />
+
+<img src="https://i.imgur.com/R05b0SU.png" height="80%" width="80%" alt="Create static website steps"/>
+
+<br />
+
+<img src="https://i.imgur.com/e91mk2S.png" height="80%" width="80%" alt="Create static website steps"/>
+
+<br />
+
+<img src="https://i.imgur.com/acA6K82.png" height="80%" width="80%" alt="Create static website steps"/>
+
+
 
 
 
