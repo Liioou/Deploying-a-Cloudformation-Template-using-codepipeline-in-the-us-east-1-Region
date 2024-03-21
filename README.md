@@ -55,7 +55,12 @@ In this project we will have 3 stages
 
 
 
+
+
 <br />
+<br />
+
+
 
 
  <b> Setup the test environment
@@ -79,9 +84,17 @@ Create a folder that will contain your code/cfn template and cd into it
  <img src="https://i.imgur.com/bljygUM.png" height="80%" width="80%" alt="Create static website steps"/>
 
 
+<br />
+<br />
+
+
 in the new folder upload the template
 
 Create a file and upload your template
+
+
+<br />
+<br />
 
 The new file created, test the file with a cfn-lint
 
@@ -103,18 +116,36 @@ install cfn-lint using command "pip install cfn-lint"
 
 
 
-- <b> Under "Properties", scroll all the way down and enable hosting a static website
+- <b> Test the file with cfn-lint installed using the command: cfn-lint < name of the file >
+
+If there's no return, it means your template do not contain any error and your are good for the next step
+
+
+ <img src="https://i.imgur.com/bUzT46f.png" height="80%" width="80%" alt="Create static website steps"/>
+ 
 <br />
 <br />
 
 
 
-- <b> In the same setting where it says "Index document", put the name of the index.html file that was just uploaded and save changes
+- <b> On Aws Codecommit, create a repository for the source stage of the pipeline
 
 
-<img src="https://i.imgur.com/ptszXKq.png" height="80%" width="80%" alt="Create static website steps"/>
+<img src="https://i.imgur.com/TpTiC7F.png" height="80%" width="80%" alt="Create static website steps"/>
 <br />
 <br />
+
+- <b> Clone the repository and cd into it
+- Copy the file in the repo
+- stage the file, use the command git commit -m"" to commit, push the file
+
+
+<img src="https://i.imgur.com/magndO8.png" height="80%" width="80%" alt="Create static website steps"/>
+  
+
+<img src="https://i.imgur.com/j2kxxoi.png" height="80%" width="80%" alt="Create static website steps"/>
+   
+  
 
 
 
